@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="QuizApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="???" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u03-rs-qmK">
+                                <rect key="frame" x="191" y="96" width="32.5" height="27"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                <color key="textColor" red="0.88764977329999994" green="0.73327689910000005" blue="0.88205032849999998" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="highlightedColor" red="0.88764977331606221" green="0.73327689911769167" blue="0.88205032850365517" alpha="0.84705882352941175" colorSpace="custom" customColorSpace="displayP3"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZLa-eI-R4P">
+                                <rect key="frame" x="139" y="155" width="136" height="39"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                <state key="normal" title="Next Question">
+                                    <color key="titleColor" systemColor="systemGray6Color"/>
+                                </state>
+                                <connections>
+                                    <action selector="showNextQuestionTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BfJ-sQ-7an"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="???" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jvJ-rJ-u7G">
+                                <rect key="frame" x="191" y="394" width="32.5" height="27"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                <color key="textColor" red="0.88764977329999994" green="0.73327689910000005" blue="0.88205032849999998" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OZU-Nc-HrR">
+                                <rect key="frame" x="139" y="489" width="136" height="39"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                <state key="normal" title="Show Answer">
+                                    <color key="titleColor" systemColor="systemGray5Color"/>
+                                </state>
+                                <connections>
+                                    <action selector="showAnswerTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ftk-wh-GpT"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="u03-rs-qmK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="52" id="1DF-Fh-k5U"/>
+                            <constraint firstItem="jvJ-rJ-u7G" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1Nf-yH-uSJ"/>
+                            <constraint firstItem="OZU-Nc-HrR" firstAttribute="height" secondItem="ZLa-eI-R4P" secondAttribute="height" id="2wT-cn-MAv"/>
+                            <constraint firstItem="OZU-Nc-HrR" firstAttribute="width" secondItem="ZLa-eI-R4P" secondAttribute="width" id="5hr-43-KgH"/>
+                            <constraint firstItem="ZLa-eI-R4P" firstAttribute="top" secondItem="u03-rs-qmK" secondAttribute="bottom" constant="32" id="DKq-4M-Vha"/>
+                            <constraint firstItem="jvJ-rJ-u7G" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="394" id="NPf-bV-L6B"/>
+                            <constraint firstItem="ZLa-eI-R4P" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Xhu-oC-DsY"/>
+                            <constraint firstItem="OZU-Nc-HrR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eis-h5-vLQ"/>
+                            <constraint firstItem="OZU-Nc-HrR" firstAttribute="top" secondItem="jvJ-rJ-u7G" secondAttribute="bottom" constant="68" id="ieF-xb-Ckg"/>
+                            <constraint firstItem="u03-rs-qmK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pfY-iG-yzS"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="answerLable" destination="jvJ-rJ-u7G" id="CIe-x7-5yK"/>
+                        <outlet property="questionLable" destination="u03-rs-qmK" id="hCU-5c-Raf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="81.696428571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
