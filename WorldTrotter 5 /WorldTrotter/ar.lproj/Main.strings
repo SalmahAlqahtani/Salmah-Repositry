@@ -1,0 +1,36 @@
+
+/* Class = "UIButton"; normalTitle = "Next Question"; ObjectID = "0VX-6P-JHd"; */
+"0VX-6P-JHd.normalTitle" = "السؤال التالي ";
+
+/* Class = "UILabel"; text = "???"; ObjectID = "2Qm-TV-yTd"; */
+"2Qm-TV-yTd.text" = "؟؟؟";
+
+/* Class = "UILabel"; text = "degrees Celsius"; ObjectID = "5rh-3Q-3yc"; */
+"5rh-3Q-3yc.text" = "الدرجات بالسيليزيه";
+
+/* Class = "UITabBarItem"; title = "Map"; ObjectID = "KBU-dn-2Hi"; */
+"KBU-dn-2Hi.title" = "الخريططه";
+
+/* Class = "UILabel"; text = "is really"; ObjectID = "MwA-Ni-P3U"; */
+"MwA-Ni-P3U.text" = "حقاً";
+
+/* Class = "UITabBarItem"; title = "quiz"; ObjectID = "P1V-Up-II4"; */
+"P1V-Up-II4.title" = "كويز";
+
+/* Class = "UILabel"; text = "degrees Fahrenheit"; ObjectID = "PTG-R4-uVR"; */
+"PTG-R4-uVR.text" = "الدرجات بالفهرنهايت";
+
+/* Class = "UILabel"; text = "100"; ObjectID = "VQ5-BE-kJF"; */
+"VQ5-BE-kJF.text" = "١٠٠";
+
+/* Class = "UITextField"; placeholder = "value"; ObjectID = "bJP-Wb-pKl"; */
+"bJP-Wb-pKl.placeholder" = "القيمه";
+
+/* Class = "UITabBarItem"; title = "Converter"; ObjectID = "gFx-WV-L3z"; */
+"gFx-WV-L3z.title" = "المحول";
+
+/* Class = "UIButton"; normalTitle = "Show Answer"; ObjectID = "hmI-yx-lDK"; */
+"hmI-yx-lDK.normalTitle" = "اظهر الاجابه";
+
+/* Class = "UILabel"; text = "???"; ObjectID = "rp8-6r-zpF"; */
+"rp8-6r-zpF.text" = "؟؟؟";
