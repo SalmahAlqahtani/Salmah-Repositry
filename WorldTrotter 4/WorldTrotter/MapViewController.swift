@@ -11,9 +11,18 @@ import MapKit
 class MapViewController: UIViewController {
     
     var mapview : MKMapView!
+    //Silver Challenge
     
+    var cm = CLLocationManager()
+    
+//    weak var delegate: MKMapViewDelegate? { get {
+//
+//    }}
+
     
     override func loadView() {
+        //Silver Challenge
+        cm.requestWhenInUseAuthorization()
         mapview = MKMapView()
         view = mapview
         
@@ -42,7 +51,40 @@ class MapViewController: UIViewController {
         leadingConstraint.isActive = true
         trailingConstraint.isActive = true
         
-    }
+        
+        // I tried to complete the last requirment from silver challenge :
+        
+        var isInitialized = false
+
+        func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+            if !isInitialized {
+                // Here is called only once
+                isInitialized = true
+
+                let userLoction: CLLocation = locations[0]
+                let latitude = userLoction.coordinate.latitude
+                let longitude = userLoction.coordinate.longitude
+                let latDelta: CLLocationDegrees = 0.05
+                let lonDelta: CLLocationDegrees = 0.05
+                let span:MKCoordinateSpan = MKCoordinateSpan(latitudeDelta: latDelta, longitudeDelta: lonDelta)
+                let location: CLLocationCoordinate2D = CLLocationCoordinate2DMake(latitude, longitude)
+                
+             //   let region: MKCoordinateRegion = MKCoordinateRegionMake(location, span)
+                
+               // let re : MKCoordinateRegion = MKCoordinateRegionMake(location, span)
+                let coordinateRegion = MKCoordinateRegion(center: location , span: span)
+
+                //init(center: CLLocationCoordinate2D, span: MKCoordinateSpan)
+                
+                
+                self.mapview.setRegion(coordinateRegion, animated: true)
+                self.mapview.showsUserLocation = true
+            }
+        }
+
+        
+        
+    }//End of View Load
     
     
     
@@ -77,7 +119,7 @@ class MapViewController: UIViewController {
         self.view.addSubview(mySwitch)
 
         
-    }
+    }//End viewDidLoad
     
     
     
